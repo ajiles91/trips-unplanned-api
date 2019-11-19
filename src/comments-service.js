@@ -1,9 +1,9 @@
 const CommentsService = {
-    getAllIdeas(knex) {
+    getAllComments(knex) {
         return knex.select('*').from('comments')
     },
 
-    addNewIdea(knex, newIdea){
+    addNewComment(knex, newIdea){
         return knex
         .insert(newComment)
         .into('comments')
