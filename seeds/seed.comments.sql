@@ -42,7 +42,7 @@ INSERT INTO comments
 
   (
     6,
-    'Raymond Émond',  
+    'Raymond Emond',  
     'Gave read use way make spot how nor. In daughter goodness an likewise 
     oh consider at procured wandered. Songs words wrong by me hills heard timed. Happy eat may doors songs. Be ignorant so of suitable dissuade weddings together. Least whole timed we is. An smallness deficient discourse do 
     newspaper be an eagerness continued. Mr my ready guest ye after short at.'
@@ -60,7 +60,7 @@ INSERT INTO comments
 
   (
     8,
-    'Janvier Rentería Tapia',
+    'Janvier Renteria Tapia',
     'Stronger unpacked felicity to of mistaken. Fanny at wrong table ye in. Be on easily cannot innate in lasted months on. Differed and and felicity steepest mrs age outweigh. Opinions learning likewise daughter now age outweigh. Raptures stanhill my greatest mistaken or exercise he on 
     although. Discourse otherwise disposing as it of strangers forfeited 
     deficient.' 
@@ -68,7 +68,7 @@ INSERT INTO comments
 
   (
     9,
-    'Olof Mårtensson',
+    'Olof Martensson',
     'Oh to talking improve produce in limited offices fifteen an. Wicket branch to answer do we. Place are decay men hours tiled. If or of ye throwing friendly required. Marianne 
     interest in exertion as. Offering my branched confined oh dashwood.' 
     
