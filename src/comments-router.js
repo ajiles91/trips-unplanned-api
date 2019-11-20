@@ -5,8 +5,8 @@ const commentsRouter = express.Router()
 const jsonParser = express.json() 
 
 commentsRouter
-.route('/api')
-.get((req,res,next) => {
+.route('/api/comments')
+.get((req, res, next) => {
     const knexInstance = req.app.get('db')
     CommentsService.getAllComments(knexInstance)
         .then(comments => {
@@ -16,7 +16,7 @@ commentsRouter
 })
 
 .post(jsonParser, (req, res, next) => {
-    const { username, comment } = req.body
+    const { username, comment } = req.body;
     const newComment = { username, comment }
     // const newComment = { username:'name1', comment:'comment1' }
     
@@ -29,7 +29,7 @@ commentsRouter
             })
         }
     }
-    
+
 
     CommentsService.addNewComment(
         req.app.get('db'), newComment
