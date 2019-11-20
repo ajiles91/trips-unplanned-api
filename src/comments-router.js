@@ -17,18 +17,18 @@ commentsRouter
 
 .post(jsonParser, (req, res, next) => {
     const { username, comment } = req.body
-    // const newComment = { username, comment }
-    const newComment = { username:'name1', comment:'comment1' }
+    const newComment = { username, comment }
+    // const newComment = { username:'name1', comment:'comment1' }
     
 
-    // for (const [key, value] of Object.entries(newComment)) {
+    for (const [key, value] of Object.entries(newComment)) {
       
-    //     if (value === null) {
-    //         return res.status(400).json({
-    //             error: { message: `Missing '${key}' in submission` }
-    //         })
-    //     }
-    // }
+        if (value === null) {
+            return res.status(400).json({
+                error: { message: `Missing '${key}' in submission` }
+            })
+        }
+    }
 
     CommentsService.addNewComment(
         req.app.get('db'), newComment
