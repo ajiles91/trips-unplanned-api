@@ -3,7 +3,7 @@ const CommentsService = {
         return knex.select('*').from('comments')
     },
 
-    addNewComment(knex, newIdea){
+    addNewComment(knex, newComment){
         return knex
         .insert(newComment)
         .into('comments')
