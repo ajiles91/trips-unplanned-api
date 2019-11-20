@@ -20,8 +20,9 @@ app.use(cors())
 app.use(errorHandler)
 app.use(commentsRouter)
 
-// app.get('/api', (req, res) => {
-//   res.send('hello from app.js')
-// })
+app.get('/', (req, res) => {
+  res.send('hello from app.js')
+})
+
 
 module.exports = app
