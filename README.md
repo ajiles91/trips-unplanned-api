@@ -1,26 +1,25 @@
-# Express Boilerplate!
+# Trips Unplanned API
+This is the API for Trips Unplanned is a fullstack app that helps users to plan a trip to major cities with weather, restaurants and info for local attractions.
 
-This is a boilerplate project used for starting new projects!
+# Technologies Used:
+Node.js, Express.js, PostgreSQL, SQL, Knex
 
-## Set up
+# Important Links:
+Live Link: https://trips-unplanned.ajiles91.now.sh/
+Client Repo: https://github.com/ajiles91/trips-unplanned
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+# API Documentation:
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+## GET /api/comments
+The comments/recommendations section has an API with one endpoint /api/comments.  GET /api/comments retrieves all the stored comments and displays them on the main page - stored as an array of objects
 
-## Scripts
-
-Start the application `npm start`
-
-Start nodemon for the application `npm run dev`
-
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+Properties of Each Object
+-id:12 (number, generated when posted in database)
+-username:Fake Name (string)
+-comment:Comments about App or Recommendation(string)
+## POST /api/comments
+POST /api/comments - user submits their name and comment and/or recommendation in a form on the main page and it is sent as a POST request to the database
+Properties of Each Object
+-id:12 (number, generated when posted in database)
+-username:Fake Name (string)
+-comment:Comments about App or Recommendation(string)
