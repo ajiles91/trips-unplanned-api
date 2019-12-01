@@ -22,7 +22,7 @@ app.use(errorHandler)
 
 
 app.get('/', (req, res) => {
-  res.send('hello from app.js')
+  res.send('Hello, world!')
 })
 
 
