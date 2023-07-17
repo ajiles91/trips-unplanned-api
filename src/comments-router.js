@@ -2,7 +2,7 @@ const express = require('express');
 const CommentsService = require('./comments-service')
 
 const commentsRouter = express.Router()
-const jsonParser = express.json() 
+const jsonParser = express.json()
 
 commentsRouter
 .route('/api/comments')
@@ -12,17 +12,17 @@ commentsRouter
         .then(comments => {
             res.json(comments)
         })
-    .catch(next)    
+    .catch(next)
 })
 
 .post(jsonParser, (req, res, next) => {
     const { username, comment } = req.body;
     const newComment = { username, comment }
-    // const newComment = { username:'name1', comment:'comment1' }
-    
+
+
 
     for (const [key, value] of Object.entries(newComment)) {
-      
+
         if (value === null) {
             return res.status(400).json({
                 error: { message: `Missing '${key}' in submission` }
