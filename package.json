@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "engines": {
-    "node": "18.16.1",
+    "node": "^18.17.0",
     "npm": "9.7.2"
   },
   "author": "Amber Jiles",
