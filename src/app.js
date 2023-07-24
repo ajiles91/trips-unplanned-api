@@ -17,13 +17,11 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 
-app.use(commentsRouter)
-app.use(errorHandler)
-
-
 app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
 
+app.use(commentsRouter)
+app.use(errorHandler)
 
 module.exports = app
