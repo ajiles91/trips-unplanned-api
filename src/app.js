@@ -20,10 +20,12 @@ const db = knex({
     connection: DATABASE_URL,
   })
 
+app.set('db', db)
+
 app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
-app.set('db', db)
+
 
 app.get('/', (req, res) => {
   res.send('Hello, world!')
