@@ -11,7 +11,7 @@
     "start": "node src/server.js",
     "predeploy": "npm audit && npm run migrate:production",
     "deploy": "git push heroku master",
-    "vercel-build": "echo hello set sslmode=require"
+    "vercel-build": "set sslmode=require echo hello"
   },
   "keywords": [],
   "engines": {

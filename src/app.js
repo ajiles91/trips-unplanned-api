@@ -15,12 +15,12 @@ const morganOption = (NODE_ENV === 'production')
   ? 'tiny'
   : 'common';
 
-const db = knex({
-    client: 'pg',
-    connection: DATABASE_URL,
-  })
+// const db = knex({
+//     client: 'pg',
+//     connection: DATABASE_URL,
+//   })
 
-app.set('db', db)
+// app.set('db', db)
 
 app.use(morgan(morganOption))
 app.use(helmet())
