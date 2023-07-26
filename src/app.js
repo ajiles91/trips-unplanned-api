@@ -7,7 +7,7 @@ const { NODE_ENV } = require('./config')
 const errorHandler = require('./error-handler')
 const commentsRouter = require('./comments-router')
 const db = require("./data/db.js");
-import db from '../data/db.js'
+// import db from '../data/db.js'
 const app = express()
 
 const morganOption = (NODE_ENV === 'production')
