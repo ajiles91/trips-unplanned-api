@@ -1,7 +1,6 @@
 const express = require('express');
 const CommentsService = require('./comments-service')
 const db = require("./data/db.js");
-import db from '../data/db.js'
 const commentsRouter = express.Router()
 const jsonParser = express.json()
 
