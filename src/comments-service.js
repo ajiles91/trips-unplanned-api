@@ -1,6 +1,7 @@
 const CommentsService = {
     getAllComments(knex) {
-        return knex.select('*').from('comments')
+        return knex.select()
+        .from('comments')
     },
 
     addNewComment(knex, newComment){
@@ -12,6 +13,6 @@ const CommentsService = {
             rows => rows[0]
         )
     },
-    
+
 }
 module.exports = CommentsService

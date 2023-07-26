@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
 
+app.get('/api', (req, res) => {
+  res.send('hello from api route')
+})
+
 app.use(commentsRouter)
 app.use(errorHandler)
 
