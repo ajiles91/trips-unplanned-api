@@ -1,7 +1,7 @@
 const app = require('./app')
 const knex = require('knex')
 // const db = require("./data/db.js");
-const { PORT, DATABASE_URL} = require('./config')
+const { DATABASE_URL} = require('./config')
 
 const db = knex({
   client: 'pg',
@@ -9,9 +9,5 @@ const db = knex({
 })
 
 app.set('db', db)
-
-app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${PORT}`)
-})
 
 // module.exports = {app};
