@@ -1,6 +1,5 @@
 const express = require('express');
 const CommentsService = require('./comments-service')
-// const db = require("./data/db.js");
 const commentsRouter = express.Router()
 const jsonParser = express.json()
 
@@ -19,10 +18,7 @@ commentsRouter
     const { username, comment } = req.body;
     const newComment = { username, comment }
 
-
-
     for (const [key, value] of Object.entries(newComment)) {
-
         if (value === null) {
             return res.status(400).json({
                 error: { message: `Missing '${key}' in submission` }

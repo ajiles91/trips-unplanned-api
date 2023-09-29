@@ -1,4 +1,3 @@
-import app from '../src/app';
-// const db = require("./data/db.js");
+import app from '../src/app'
 
 export default app;

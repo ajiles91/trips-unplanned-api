@@ -1,9 +1,6 @@
-const knex = require('knex')
 const CommentsService = {
     getAllComments(knex) {
-        return knex.select()
-        //
-        .table('comments')
+        return knex.select('*'.from('comments'))
     },
 
     addNewComment(knex, newComment){
